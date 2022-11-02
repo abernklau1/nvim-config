@@ -40,6 +40,7 @@ return require("packer").startup(function(use)
   }
   -- vim.cmd("colorscheme tokyomidnight-midnight")
   use "abernklau1/tokyomidnight"
+  use "wakatime/vim-wakatime"
   if packer_bootstrap then
     require("packer").sync()
   end
