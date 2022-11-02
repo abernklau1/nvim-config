@@ -14,11 +14,10 @@ local packer_bootstrap = ensure_packer()
 
 return require("packer").startup(function(use)
   use "wbthomason/packer.nvim"
-  use "morhetz/gruvbox"
   use "luochen1990/rainbow"
   use "tpope/vim-surround"
-  --use "tpope/vim-commentary"
-  --use "tpope/vim-dispatch"
+  -- use "tpope/vim-commentary"
+  -- use "tpope/vim-dispatch"
   use "neovim/nvim-lspconfig"
   use "ray-x/lsp_signature.nvim"
   use "nvim-treesitter/nvim-treesitter"
@@ -39,6 +38,7 @@ return require("packer").startup(function(use)
     "nvim-tree/nvim-tree.lua",
     requires = { "kyazdani42/nvim-web-devicons", opt = true }
   }
+  -- vim.cmd("colorscheme tokyomidnight-midnight")
   use "abernklau1/tokyomidnight"
   if packer_bootstrap then
     require("packer").sync()
